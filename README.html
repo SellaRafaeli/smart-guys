@@ -1,0 +1,18 @@
+<html><head> <meta charset='utf-8'> <title>README</title><meta name="viewport" content="width=device-width"><link href="/css/main.css" rel="stylesheet"></link></head><body><div class='top'><a href='/'>smart-guys.com</a></div><article class="markdown-body"><h2 id="setup">Setup</h2>
+
+<ol>
+  <li>$ git clone git@github.com:SellaRafaeli/tech_blog.git</li>
+  <li>$ gem install kramdown</li>
+  <li>$ ruby build.rb #generates .html from each .md.</li>
+</ol>
+
+<p>That’s it, now fire up some static file server and access localhost:8000 or localhost:8000/posts/js/node_article(.html), etc.</p>
+
+<h2 id="notes">Notes:</h2>
+
+<ol>
+  <li>I recommend setting up a watcher to monitor all .md files and run ‘ruby build.rb’ whenever any .md file changes. But you can just run it yourself when you’re down markdowning.</li>
+  <li>We can modify build.rb to auto-generate indexes (lists of articles) although in my experience that is not worth the effort (manually updating indexes is fine).</li>
+  <li>Modify the generated HTML in build.rb, the CSS is in main.css.</li>
+</ol>
+</article><footer><a href='/'>© smart_guys.com, 2016</a></footer></body></html>
